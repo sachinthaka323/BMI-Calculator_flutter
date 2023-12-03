@@ -1,0 +1,22 @@
+[debug] [2023-09-04T12:52:10.179Z] ----------------------------------------------------------------------
+[debug] [2023-09-04T12:52:10.183Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SACHINTHAKA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create android flutter_application_6 (android) --package-name=flutter_application_6 --json --project=myfirstapp-a64cf
+[debug] [2023-09-04T12:52:10.184Z] CLI Version:   12.4.5
+[debug] [2023-09-04T12:52:10.184Z] Platform:      win32
+[debug] [2023-09-04T12:52:10.184Z] Node Version:  v18.16.1
+[debug] [2023-09-04T12:52:10.185Z] Time:          Mon Sep 04 2023 18:22:10 GMT+0530 (India Standard Time)
+[debug] [2023-09-04T12:52:10.185Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-04T12:52:10.196Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-04T12:52:10.197Z] > authorizing via signed-in user (2020t00897@stu.cmb.ac.lk)
+[info] Create your ANDROID app in project myfirstapp-a64cf:
+[debug] [2023-09-04T12:52:10.201Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/myfirstapp-a64cf/androidApps [none]
+[debug] [2023-09-04T12:52:10.202Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/myfirstapp-a64cf/androidApps {"displayName":"flutter_application_6 (android)","packageName":"flutter_application_6"}
+[debug] [2023-09-04T12:52:10.715Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/myfirstapp-a64cf/androidApps 400
+[debug] [2023-09-04T12:52:10.715Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/myfirstapp-a64cf/androidApps {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2023-09-04T12:52:10.716Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2023-09-04T12:52:10.996Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\SACHINTHAKA\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\SACHINTHAKA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create Android app for project myfirstapp-a64cf. See firebase-debug.log for more info.
